@@ -20,7 +20,7 @@ st.set_page_config(
 )
 
 # CONSTANTS
-CLASS_NAMES = ["MildDemented", "ModerateDemented", "NonDemented", "VeryMildDemented"]
+CLASS_NAMES = ["NonDemented", "VeryMildDemented", "MildDemented", "ModerateDemented"]
 CLASS_LABELS = {
     "NonDemented":      ("Non Demented",       "🟢", "#28a745"),
     "VeryMildDemented": ("Very Mild Demented",  "🟡", "#ffc107"),

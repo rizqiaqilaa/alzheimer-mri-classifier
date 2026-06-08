@@ -210,7 +210,7 @@ try:
 
     feat_names_arr = np.array(feat_names) if feat_names is not None else np.arange(len(mean_shap))
 
-    top_n = st.slider("Tampilkan Top N Fitur:", min_value=10, max_value=min(50, len(mean_shap)), value=20)
+    top_n = st.slider("Show Top N Features:", min_value=4, max_value=min(50, len(mean_shap)), value=20)
 
     top_idx   = np.argsort(mean_shap)[-top_n:][::-1]
     top_vals  = mean_shap[top_idx]

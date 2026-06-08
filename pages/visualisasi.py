@@ -190,8 +190,8 @@ with col_pca:
 
 with col_tsne:
     if X_tsne.shape[1] >= 2:
-        fig = scatter_plot(X_tsne, y_test, "t-SNE — 2D Embedding")
-        st.pyplot(fig)
+        y_tsne = np.array(y_test[:len(X_tsne)])
+        fig = scatter_plot(X_tsne, y_tsne, "t-SNE - 2D Embedding")
     else:
         st.warning("t-SNE data is not available")
 

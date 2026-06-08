@@ -202,7 +202,7 @@ try:
     shap_arr = np.array(shap_values)
 
     if shap_arr.ndim == 3:
-        mean_shap = np.abs(shap_arr).mean(axis=(0, 1))
+        mean_shap = np.abs(shap_arr).mean(axis=(0, 2))
     elif shap_arr.ndim == 2:
         mean_shap = np.abs(shap_arr).mean(axis=0)
     else:

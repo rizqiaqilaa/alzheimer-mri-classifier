@@ -6,3 +6,4 @@ scikit-learn
 joblib
 Pillow
 PyWavelets
+seaborn
